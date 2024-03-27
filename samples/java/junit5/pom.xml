@@ -35,8 +35,9 @@
                 <version>2.22.2</version>
                 <configuration>
                     <testFailureIgnore>true</testFailureIgnore>
-                    <disableXmlReport>true</disableXmlReport>
+                    <disableXmlReport>false</disableXmlReport>
                     <useFile>false</useFile>
+                    <reportsDirectory>reports</reportsDirectory>
                 </configuration>
             </plugin>
         </plugins>
@@ -58,7 +59,7 @@
         <dependency>
             <groupId>com.testrail</groupId>
             <artifactId>testrail-junit-extensions</artifactId>
-            <version>0.1.0</version>
+            <version>0.1.1</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

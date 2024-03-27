@@ -1,5 +1,5 @@
-host: https://INSTANCE-NAME.testrail.io
-project: PROJECT NAME
-username: USERNAME
-password: PASSWORD
-title: JUnit5 Automated Test Run
+host: https://souzou.testrail.io
+project: TestRail automation 2
+username: szairi2011@gmail.com
+password: Danialv44{
+#title: "Release 1.0: Run-3 ${JAVA_HOME} (Automated with spec-first approach)"
