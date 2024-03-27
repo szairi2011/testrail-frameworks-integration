@@ -15,17 +15,15 @@ class SumTests {
 
     @Test
     @DisplayName("Add Two Numbers")
-    @TestRail(id="C2203")
     void AddTwoNumbers() {
-        assertEquals(3, 1+2.5, "1 + 2 should equal 3");
+        assertEquals(3, 1+2, "1 + 2 should equal 3");
     }
 
     @Test
     @DisplayName("Add Two Numbers With Decimals")
-    @TestRail(id="C2204")
     void AddTwoNumbersWithDecimals(TestRailTestReporter customReporter) {
         customReporter.setProperty("testrail_attachment", "sample_reports/testrail.jpg");
-        assertEquals(3, 1.4+1.5, "1.3+1.5 should equal 3");
+        assertEquals(3, 1.5+1.4, "1.5+1.4 should equal 3");
     }
 
     @Nested
@@ -33,7 +31,6 @@ class SumTests {
 
         @Test
         @DisplayName("Add Three Numbers")
-        @TestRail(id="C2202")
         void AddThreeNumbers() {
             assertEquals(3, 1+1+1, "1+1+1 should equal 3");
         }
