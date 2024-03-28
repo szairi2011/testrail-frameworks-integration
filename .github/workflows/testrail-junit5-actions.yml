@@ -67,7 +67,7 @@ jobs:
       - name: Execute TestRail CLI to upload results
         working-directory: ${{ env.WORKING_DIR }}
         run: |
-          trcli -n \
+          trcli -n -v \
             -h ${{ env.TESTRAIL_URL }} \
             --project "${{ env.PROJECT_NAME }}" \
             --project-id ${{ env.PROJECT_ID }} \
