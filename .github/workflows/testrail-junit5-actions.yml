@@ -1,0 +1,83 @@
+
+on:
+  # push:
+  #   branches:
+  #     - main
+  
+  # pull_request:
+  #   branches:
+  #     - '*'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  TESTRAIL_USER: szairi2011@gmail.com
+  TESTRAIL_URL: https://souzou.testrail.io
+  PROJECT_NAME: TestRail automation 2
+  PROJECT_ID: 3
+  SUITE_ID: 10
+  MILESTONE_ID: 7
+  RUN_ID: 36
+
+jobs:
+  junit5:
+    name: JUnit5
+
+    runs-on: ubuntu-latest
+
+    env:
+        WORKING_DIR: samples/java/junit5
+      # WORKING_DIR: .
+
+    steps:
+      # Checkout from Github
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Set up Java 8
+      - name: 'Set up JDK 8'
+        uses: actions/setup-java@v3
+        with:
+          java-version: 8
+          distribution: temurin
+
+      # Validate unitary TCs & create a JUnit test report
+      - name: Execute tests
+        working-directory: ${{ env.WORKING_DIR }}
+        continue-on-error: true
+        run: mvn clean compile test
+
+      # Setup Python
+      - name: Setup Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: 3.x # Use latest Python 3.x version
+
+      # Upgrade pip dependency
+      - name: Install dependencies
+        run: python -m pip install --upgrade pip
+
+      # Install trcli tool
+      - name: Install trcli tool
+        run: |
+          python -m pip install --upgrade trcli
+
+      # Sync test results with TestRail TCs (Using Specification-first approach)
+      - name: Execute TestRail CLI to upload results
+        working-directory: ${{ env.WORKING_DIR }}
+        run: |
+          trcli -n -h "https://souzou.testrail.io" -u "szairi2011@gmail.com" -p "Danialv44{" --project-id "3" --project "TestRail automation 2" parse_junit -f /home/runner/work/testrail-frameworks-integration/testrail-frameworks-integration/samples/java/junit5/target/TEST-junit-jupiter.xml --case-matcher "property" --suite-id "10" --milestone-id "7" --run-id "36"
+          # trcli -n -v \
+          #   -h ${{ env.TESTRAIL_URL }} \
+          #   --project "${{ env.PROJECT_NAME }}" \
+          #   --project-id ${{ env.PROJECT_ID }} \
+          #   -u ${{ env.TESTRAIL_USER }} \
+          #   -p "${{ secrets.TESTRAIL_USER_PW }}" \
+          #   parse_junit \
+          #   -f "target/TEST-junit-jupiter.xml" \
+          #   --case-matcher "property" \
+          #   --suite-id "${{ env.SUITE_ID }}" \ 
+          #   --milestone-id "${{ env.MILESTONE_ID }}" \
+          #   --run-id "${{ env.RUN_ID }}" \
+          #   --run-description "GitHub workflow: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
