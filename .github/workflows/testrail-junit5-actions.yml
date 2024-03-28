@@ -67,7 +67,7 @@ jobs:
       - name: Execute TestRail CLI to upload results
         working-directory: ${{ env.WORKING_DIR }}
         run: |
-          trcli -n -c .\trcli-config.yml --project-id "3" parse_junit -f .\target\TEST-junit-jupiter.xml --case-matcher "property" --suite-id "10" --milestone-id "7" --run-id "36"
+          trcli -n -c ${{ env.WORKING_DIR }}/trcli-config.yml --project-id "3" parse_junit -f ${{ env.WORKING_DIR }}/target/TEST-junit-jupiter.xml --case-matcher "property" --suite-id "10" --milestone-id "7" --run-id "36"
           # trcli -n -v \
           #   -h ${{ env.TESTRAIL_URL }} \
           #   --project "${{ env.PROJECT_NAME }}" \
