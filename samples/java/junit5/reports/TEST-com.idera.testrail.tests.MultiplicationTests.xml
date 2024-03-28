@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.idera.testrail.tests.MultiplicationTests" time="0" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.idera.testrail.tests.MultiplicationTests" time="0.001" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -19,7 +19,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-1.8\jre\bin"/>
-    <property name="sun.java.command" value="C:\Users\e1079458\AppData\Local\Temp\1\surefire7278006698030262217\surefirebooter6648745809274662676.jar C:\Users\e1079458\AppData\Local\Temp\1\surefire7278006698030262217 2024-03-27T17-32-46_530-jvmRun1 surefire37405462821891975tmp surefire_05558176129312723111tmp"/>
+    <property name="sun.java.command" value="C:\Users\e1079458\AppData\Local\Temp\1\surefire426926393602061268\surefirebooter3568747711203680484.jar C:\Users\e1079458\AppData\Local\Temp\1\surefire426926393602061268 2024-03-28T15-38-15_736-jvmRun1 surefire5513966040726609205tmp surefire_08011290932771494387tmp"/>
     <property name="surefire.test.class.path" value="C:\Users\e1079458\work\learn-testrail\testrail-frameworks-integration\samples\java\junit5\target\test-classes;C:\Users\e1079458\work\learn-testrail\testrail-frameworks-integration\samples\java\junit5\target\classes;C:\Users\e1079458\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.8.2\junit-jupiter-engine-5.8.2.jar;C:\Users\e1079458\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\e1079458\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\e1079458\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\e1079458\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\e1079458\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\e1079458\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\e1079458\.m2\repository\com\testrail\testrail-junit-extensions\0.1.1\testrail-junit-extensions-0.1.1.jar;C:\Users\e1079458\.m2\repository\org\junit\platform\junit-platform-suite-api\1.7.1\junit-platform-suite-api-1.7.1.jar;C:\Users\e1079458\.m2\repository\org\junit\platform\junit-platform-reporting\1.7.1\junit-platform-reporting-1.7.1.jar;C:\Users\e1079458\.m2\repository\org\junit\platform\junit-platform-launcher\1.7.1\junit-platform-launcher-1.7.1.jar;C:\Users\e1079458\.m2\repository\org\junit\platform\junit-platform-runner\1.7.1\junit-platform-runner-1.7.1.jar;C:\Users\e1079458\.m2\repository\junit\junit\4.13\junit-4.13.jar;C:\Users\e1079458\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\e1079458"/>
@@ -32,7 +32,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\e1079458\AppData\Local\Temp\1\surefire7278006698030262217\surefirebooter6648745809274662676.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\e1079458\AppData\Local\Temp\1\surefire426926393602061268\surefirebooter3568747711203680484.jar"/>
     <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk-1.8\jre\lib\resources.jar;C:\Program Files\Java\jdk-1.8\jre\lib\rt.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jsse.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jce.jar;C:\Program Files\Java\jdk-1.8\jre\lib\charsets.jar;C:\Program Files\Java\jdk-1.8\jre\lib\jfr.jar;C:\Program Files\Java\jdk-1.8\jre\classes"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>

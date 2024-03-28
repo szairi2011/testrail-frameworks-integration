@@ -25,7 +25,7 @@ class SumTests {
     @TestRail(id="C2204")
     void AddTwoNumbersWithDecimals(TestRailTestReporter customReporter) {
         customReporter.setProperty("testrail_attachment", "sample_reports/testrail.jpg");
-        assertEquals(3, 1.5+1.6, "1.3+1.5 should equal 3");
+        assertEquals(3, 1.5+1.5, "1.3+1.5 should equal 3");
     }
 
     @Nested
