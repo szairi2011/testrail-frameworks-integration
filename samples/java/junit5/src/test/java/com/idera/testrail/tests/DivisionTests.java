@@ -6,11 +6,11 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
-class MultiplicationTests {
+public class DivisionTests {
 
     @Test
-    @TestRail(id="C2192", description = "Multiply two numbers")
-    public void MultiplyTwoNumbers() {
-        assertEquals(4, 2*2, "Should equal 4");
+    @TestRail(id="C2195", description = "Divide two numbers")
+    public void DivideTwoNumbers(){
+        assertEquals(2, 4/2);
     }
 }

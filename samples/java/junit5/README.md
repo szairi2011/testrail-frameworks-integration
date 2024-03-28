@@ -74,4 +74,6 @@ If the TestRail project is created using mode "Use multiple test suites to manag
 # Upload tests results, need to specify the test suite id
 trcli -n -c .\trcli-config.yml --project-id "3" parse_junit -f .\target\TEST-junit-jupiter.xml --case-matcher "property" --suite-id "10" --milestone-id "7" --run-id "36"
 
+trcli -n -h "https://souzou.testrail.io" -u "szairi2011@gmail.com" -p "Danialv44{" --project-id "3" --project "TestRail automation 2" parse_junit -f ${{ env.WORKING_DIR }}/target/TEST-junit-jupiter.xml --case-matcher "property" --suite-id "10" --milestone-id "7" --run-id "36"
+
 ```
