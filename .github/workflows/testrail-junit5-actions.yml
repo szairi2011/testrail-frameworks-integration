@@ -70,7 +70,7 @@ jobs:
           trcli -n \
             -h ${{ env.TESTRAIL_URL }} \
             --project "${{ env.PROJECT_NAME }}" \
-            --project-id ${{ env.PROJECT_ID }}
+            --project-id ${{ env.PROJECT_ID }} \
             -u ${{ env.TESTRAIL_USER }} \
             -p "${{ secrets.TESTRAIL_USER_PW }}" \
             parse_junit \
