@@ -67,7 +67,7 @@ jobs:
       - name: Execute TestRail CLI to upload results
         working-directory: ${{ env.WORKING_DIR }}
         run: |
-          trcli -n -h "https://souzou.testrail.io" -u "szairi2011@gmail.com" -p "Danialv44{" --project-id "3" --project "TestRail automation 2" parse_junit -f ${{ env.WORKING_DIR }}/target/TEST-junit-jupiter.xml --case-matcher "property" --suite-id "10" --milestone-id "7" --run-id "36"
+          trcli -n -h "https://souzou.testrail.io" -u "szairi2011@gmail.com" -p "Danialv44{" --project-id "3" --project "TestRail automation 2" parse_junit -f /home/runner/work/testrail-frameworks-integration/testrail-frameworks-integration/samples/java/junit5/target/TEST-junit-jupiter.xml --case-matcher "property" --suite-id "10" --milestone-id "7" --run-id "36"
           # trcli -n -v \
           #   -h ${{ env.TESTRAIL_URL }} \
           #   --project "${{ env.PROJECT_NAME }}" \
